@@ -12,7 +12,7 @@ function storeMessage(event, form) {
     $.post({
        url: $(form).attr('action'),
        data: $(form).serialize(),
-       succes: function(error) {
+       success: function(error) {
            if (error){
                alert(error);
            }
